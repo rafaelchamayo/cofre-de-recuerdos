@@ -39,10 +39,15 @@ function guardarProgreso(){
 }
 
 /* ── Corazones de progreso ────────────────────────────────── */
+const SVG_CORAZON =
+  '<svg class="corazon__svg" viewBox="0 0 24 22" aria-hidden="true">' +
+  '<path fill="url(#gradCorazon)" d="M12 20.7C12 20.7 2.4 14.4 2.4 8.2A5.2 5.2 0 0 1 12 5A5.2 5.2 0 0 1 21.6 8.2C21.6 14.4 12 20.7 12 20.7Z"/>' +
+  "</svg>";
+
 RECUERDOS.forEach((r, i) => {
   const b = document.createElement("button");
   b.className = "corazon";
-  b.textContent = "💜";
+  b.innerHTML = SVG_CORAZON;
   b.type = "button";
   b.setAttribute("aria-label", `${r.mes}: aún sin abrir`);
   b.addEventListener("click", () => { if (i < abiertos) mostrarRecuerdo(i, false); });
@@ -62,11 +67,11 @@ function pintarProgreso(){
 
   if (abiertos >= TOTAL){
     cofre.classList.add("agotado");
-    $("pista").textContent = "Los 12 están abiertos 💜";
+    $("pista").textContent = "Los 12 están abiertos";
     cofre.setAttribute("aria-label", "Volver a ver el festejo");
   } else {
     cofre.classList.remove("agotado");
-    $("pista").textContent = abiertos === 0 ? "Tócalo 👆" : "Tócalo otra vez 👆";
+    $("pista").textContent = abiertos === 0 ? "Tócalo" : "Tócalo otra vez";
   }
 }
 

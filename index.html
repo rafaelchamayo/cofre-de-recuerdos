@@ -9,10 +9,21 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💜</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,600&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
+
+<!-- degradado borgoña de los corazones de progreso -->
+<svg width="0" height="0" aria-hidden="true" style="position:absolute">
+  <defs>
+    <linearGradient id="gradCorazon" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#d92a5b"/>
+      <stop offset="55%"  stop-color="#a5194a"/>
+      <stop offset="100%" stop-color="#6b0f2f"/>
+    </linearGradient>
+  </defs>
+</svg>
 
 <!-- fondo animado -->
 <div class="fondo" aria-hidden="true">
@@ -98,7 +109,7 @@
         <circle cx="164" cy="82" r="5" fill="#f0abfc" opacity=".8"/>
       </g>
     </svg>
-    <span class="cofre__pista" id="pista">Tócalo 👆</span>
+    <span class="cofre__pista" id="pista">Tócalo</span>
   </button>
 
   <!-- progreso -->

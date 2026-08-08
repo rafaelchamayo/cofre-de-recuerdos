@@ -26,61 +26,61 @@ const RECUERDOS = [
   {
     mes: "Mes 1",
     imagen: "imagenes/mes-01.jpg",
-    texto: "Amo despertarme y que lo primero que vea sea tu cara de dormida.",
+    texto: "amo haberte conocido y seguirte conociendo mas y mas todos los dias bebis c:",
   },
   {
     mes: "Mes 2",
     imagen: "imagenes/mes-02.jpg",
-    texto: "Amo cocinar contigo aunque terminemos ensuciando toda la cocina.",
+    texto: "amo haberte pedido tantas veces ue seas me nobia y amaria pedirtelo mil veces mas y pronto que seas mi esposa porque eres la mejor sip",
   },
   {
     mes: "Mes 3",
     imagen: "imagenes/mes-03.jpg",
-    texto: "Amo caminar sin rumbo contigo y que se nos haga de noche hablando.",
+    texto: "amo besarte en el cachete y darte piquitos y llenarte de amor siempre",
   },
   {
     mes: "Mes 4",
     imagen: "imagenes/mes-04.jpg",
-    texto: "Amo verte reír con ese chiste malo que solo tú y yo entendemos.",
+    texto: "amo salir de chopin contigo cuando tengo platita y comprarte cosita embese sip e ir a happyland",
   },
   {
     mes: "Mes 5",
     imagen: "imagenes/mes-05.jpg",
-    texto: "Amo bailar contigo en la sala, sin música y sin saber bailar.",
+    texto: "amo darte regalitos para ver la sonrisa ma linda de todo el planeta sip, me hace pensar que deberia hacerlo ma seguido sip",
   },
   {
     mes: "Mes 6",
     imagen: "imagenes/mes-06.jpg",
-    texto: "Amo los viajes contigo: el mapa siempre es lo de menos.",
+    texto: "amo salir a comer contigo y que me enseñes nuevos sabores y compartir tu pasatiempo favorito contigo mi amorsi",
   },
   {
     mes: "Mes 7",
     imagen: "imagenes/mes-07.jpg",
-    texto: "Amo las tardes de película en las que ninguno ve la película.",
+    texto: "amo alistarnos bonitos y salir por la noche y quedarme admirando lo bonita que eres y que eres mia sipi",
   },
   {
     mes: "Mes 8",
     imagen: "imagenes/mes-08.jpg",
-    texto: "Amo escucharte contarme tu día como si fuera la mejor historia.",
+    texto: "amo salir por barranco contigo y que me enseñe la ciuda y darte besitos mientras nos tomamos fotitos",
   },
   {
     mes: "Mes 9",
     imagen: "imagenes/mes-09.jpg",
-    texto: "Amo abrazarte cuando hace frío y robarte todo el calor.",
+    texto: "amo llorar y ser vulnerable contigo porque ere mi safe place mi bida",
   },
   {
     mes: "Mes 10",
     imagen: "imagenes/mes-10.jpg",
-    texto: "Amo hacer planes contigo, incluso los que nunca cumplimos.",
+    texto: "amo vivir contigo y dormir contigo y despertarme contigo y lo haria por todos mis dias amorsi",
   },
   {
     mes: "Mes 11",
     imagen: "imagenes/mes-11.jpg",
-    texto: "Amo el silencio contigo, ese en el que no hace falta decir nada.",
+    texto: "amo pasar dias en mi casita contigo y tener spa days y estar cozy viendo series contigo bebis",
   },
   {
     mes: "Mes 12",
     imagen: "imagenes/mes-12.jpg",
-    texto: "Y sobre todo: amo simplemente estar contigo. Donde sea.",
+    texto: "amo pasar momentos grandes y chiquitos contigo mi amor, gracia por ser mi compañera de vida por siempree",
   },
 ];

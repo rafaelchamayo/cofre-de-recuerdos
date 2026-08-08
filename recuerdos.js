@@ -16,9 +16,10 @@ const CONFIG = {
   subtitulo: "doce meses y doce momentos contigo bebis.",
 
   // Texto del festejo final (después del recuerdo n.º 12)
-  finalTitulo: "¡Feliz Año!",
+  finalTitulo: "¡feliz añooo!",
   finalTexto:
-    "Doce meses contigo y todavía se siente como el primero.\nGracias por cada uno de estos momentos.\nVamos por muchísimos más. Te amo. 💜",
+    "llevamos un año y mas tiempo juntitos, pero todavia se siente como al inicio.\nte amo mucho amorsito preciosa, gracias por cada segundo que me regalas junto a ti c;",
+  finalBoton: "volver al cofre sipi",
 };
 
 const RECUERDOS = [

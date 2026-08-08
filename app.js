@@ -29,6 +29,7 @@ $("titulo").textContent     = CONFIG.titulo;
 $("subtitulo").textContent  = CONFIG.subtitulo;
 $("finalTitulo").textContent = CONFIG.finalTitulo;
 $("finalTexto").textContent  = CONFIG.finalTexto;
+$("finalCerrar").textContent = CONFIG.finalBoton;
 
 /* ── Progreso guardado ────────────────────────────────────── */
 function cargarProgreso(){

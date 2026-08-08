@@ -31,15 +31,18 @@ imagenes/mes-12.jpg
 ## ✍️ Dónde poner los TEXTOS
 
 Todo se edita en el archivo **`recuerdos.js`**. Es el único archivo que
-necesitas tocar:
+necesitas tocar.
+
+> ⚠️ No edites los textos en `index.html`: al cargar la página el JavaScript
+> los reemplaza por los de `recuerdos.js`, así que esos cambios no se verían.
 
 ```js
 const CONFIG = {
-  nombre: "Mi amor",
-  titulo: "Nuestro cofre de recuerdos",
-  subtitulo: "Doce meses, doce momentos...",
-  finalTitulo: "¡Feliz Año!",
-  finalTexto: "Doce meses contigo...",
+  cinta: "12 meses juntos",              // la etiqueta chiquita de arriba
+  titulo: "nuestro cofre de recuerdos",  // el título grande
+  subtitulo: "doce meses y doce...",     // la frase de abajo
+  finalTitulo: "¡Feliz Año!",            // el festejo del recuerdo 12
+  finalTexto: "Doce meses contigo...",   // tu mensaje final
 };
 
 const RECUERDOS = [

@@ -24,6 +24,7 @@ let ocupado  = false;              // evita dobles clics durante la animación
 
 /* ── Textos de configuración ──────────────────────────────── */
 document.title = `${CONFIG.titulo} 💜`;
+document.querySelector(".cinta").textContent = CONFIG.cinta;
 $("titulo").textContent     = CONFIG.titulo;
 $("subtitulo").textContent  = CONFIG.subtitulo;
 $("finalTitulo").textContent = CONFIG.finalTitulo;

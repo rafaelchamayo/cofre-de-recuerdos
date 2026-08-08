@@ -6,14 +6,14 @@
    ═══════════════════════════════════════════════════════════════════ */
 
 const CONFIG = {
-  // Cómo la llamas (sale en el título de la página)
-  nombre: "Mi amor",
+  // Etiqueta chiquita de arriba del todo
+  cinta: "12 meses con amorsi",
 
-  // Título grande de arriba
-  titulo: "Nuestro cofre de recuerdos",
+  // Título grande
+  titulo: "nuestro cofre de recuerdos",
 
   // Frase debajo del título
-  subtitulo: "Doce meses, doce momentos. Tócalo y ábrelos uno por uno.",
+  subtitulo: "doce meses y doce momentos contigo bebis.",
 
   // Texto del festejo final (después del recuerdo n.º 12)
   finalTitulo: "¡Feliz Año!",

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nuestro cofre de recuerdos 💜</title>
+<meta name="description" content="Doce meses, doce recuerdos.">
+<meta name="theme-color" content="#2a0a2e">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💜</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,600&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<!-- fondo animado -->
+<div class="fondo" aria-hidden="true">
+  <div class="orbe orbe--1"></div>
+  <div class="orbe orbe--2"></div>
+  <div class="orbe orbe--3"></div>
+  <div class="estrellas"></div>
+</div>
+
+<!-- lienzo de confeti / fuegos artificiales -->
+<canvas id="lienzo" aria-hidden="true"></canvas>
+
+<main class="escena">
+
+  <header class="cabecera">
+    <p class="cinta">12 meses juntos</p>
+    <h1 class="titulo" id="titulo">Nuestro cofre de recuerdos</h1>
+    <p class="subtitulo" id="subtitulo">Doce meses, doce momentos.</p>
+  </header>
+
+  <!-- ══════════ EL COFRE ══════════ -->
+  <button class="cofre" id="cofre" aria-label="Abrir el cofre y descubrir un recuerdo">
+    <span class="cofre__brillo" aria-hidden="true"></span>
+    <svg class="cofre__svg" viewBox="0 0 260 210" role="img" aria-hidden="true">
+      <defs>
+        <linearGradient id="madera" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%"  stop-color="#7d1136"/>
+          <stop offset="55%" stop-color="#5a0d29"/>
+          <stop offset="100%" stop-color="#38071a"/>
+        </linearGradient>
+        <linearGradient id="maderaTapa" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%"  stop-color="#9b1c47"/>
+          <stop offset="70%" stop-color="#6b0f2f"/>
+          <stop offset="100%" stop-color="#4a0a21"/>
+        </linearGradient>
+        <linearGradient id="oro" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%"   stop-color="#ffe9a8"/>
+          <stop offset="35%"  stop-color="#f6c453"/>
+          <stop offset="65%"  stop-color="#d99a24"/>
+          <stop offset="100%" stop-color="#ffdd8f"/>
+        </linearGradient>
+        <linearGradient id="interior" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%"   stop-color="#ffd76e"/>
+          <stop offset="45%"  stop-color="#c084fc"/>
+          <stop offset="100%" stop-color="#3b0764"/>
+        </linearGradient>
+        <radialGradient id="luz" cx="50%" cy="100%" r="70%">
+          <stop offset="0%"   stop-color="#ffe9a8" stop-opacity=".95"/>
+          <stop offset="55%"  stop-color="#e879f9" stop-opacity=".45"/>
+          <stop offset="100%" stop-color="#a855f7" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+
+      <!-- sombra en el suelo -->
+      <ellipse class="cofre__sombra" cx="130" cy="196" rx="88" ry="12"/>
+
+      <!-- luz que escapa del cofre -->
+      <path class="cofre__luz" d="M40 108 L130 20 L220 108 Z" fill="url(#luz)"/>
+
+      <!-- cuerpo -->
+      <g class="cofre__cuerpo">
+        <rect x="34" y="104" width="192" height="84" rx="12" fill="url(#madera)"/>
+        <rect x="34" y="104" width="192" height="84" rx="12" fill="none" stroke="url(#oro)" stroke-width="3"/>
+        <rect x="34" y="126" width="192" height="9" fill="url(#oro)" opacity=".85"/>
+        <rect x="58" y="104" width="9" height="84" fill="url(#oro)" opacity=".55"/>
+        <rect x="193" y="104" width="9" height="84" fill="url(#oro)" opacity=".55"/>
+        <!-- cerradura -->
+        <g class="cofre__cerradura">
+          <rect x="114" y="112" width="32" height="38" rx="7" fill="url(#oro)"/>
+          <circle cx="130" cy="127" r="6.5" fill="#4a0a21"/>
+          <rect x="127" y="127" width="6" height="14" rx="3" fill="#4a0a21"/>
+        </g>
+      </g>
+
+      <!-- tapa (se abre) -->
+      <g class="cofre__tapa">
+        <path d="M34 108 A96 96 0 0 1 226 108 Z" fill="url(#maderaTapa)"/>
+        <path d="M34 108 A96 96 0 0 1 226 108" fill="none" stroke="url(#oro)" stroke-width="3.5"/>
+        <path d="M62 108 A68 68 0 0 1 198 108" fill="none" stroke="url(#oro)" stroke-width="2.5" opacity=".6"/>
+        <rect x="30" y="100" width="200" height="12" rx="6" fill="url(#oro)"/>
+        <circle cx="130" cy="66" r="9" fill="#ffe9a8" opacity=".9"/>
+        <circle cx="96"  cy="82" r="5" fill="#f0abfc" opacity=".8"/>
+        <circle cx="164" cy="82" r="5" fill="#f0abfc" opacity=".8"/>
+      </g>
+    </svg>
+    <span class="cofre__pista" id="pista">Tócalo 👆</span>
+  </button>
+
+  <!-- progreso -->
+  <section class="progreso" aria-label="Recuerdos descubiertos">
+    <div class="progreso__corazones" id="corazones"></div>
+    <p class="progreso__texto"><span id="contador">0</span> de 12 recuerdos abiertos</p>
+  </section>
+
+  <button class="reiniciar" id="reiniciar" hidden>↺ Empezar de nuevo</button>
+</main>
+
+<!-- ══════════ TARJETA DEL RECUERDO ══════════ -->
+<div class="capa" id="capa" hidden>
+  <div class="tarjeta" role="dialog" aria-modal="true" aria-labelledby="tarjetaMes">
+    <button class="tarjeta__cerrar" id="cerrar" aria-label="Cerrar">×</button>
+    <p class="tarjeta__mes" id="tarjetaMes">Mes 1</p>
+    <div class="marco" id="marco">
+      <img class="marco__foto" id="foto" alt="" >
+      <div class="marco__vacio" aria-hidden="true">
+        <span class="marco__emoji">💜</span>
+        <span class="marco__aviso">Pon tu foto en<br><code id="rutaFoto">imagenes/mes-01.jpg</code></span>
+      </div>
+    </div>
+    <p class="tarjeta__texto" id="tarjetaTexto"></p>
+    <button class="tarjeta__boton" id="siguiente">Guardar en mi corazón 💜</button>
+  </div>
+</div>
+
+<!-- ══════════ FINAL: FELIZ AÑO ══════════ -->
+<div class="final" id="final" hidden>
+  <div class="final__contenido">
+    <h2 class="final__titulo" id="finalTitulo">¡Feliz Año!</h2>
+    <p class="final__texto" id="finalTexto"></p>
+    <button class="final__boton" id="finalCerrar">Volver al cofre</button>
+  </div>
+</div>
+
+<script src="recuerdos.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
